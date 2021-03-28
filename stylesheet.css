@@ -80,7 +80,7 @@ img{
   background: lightpink;
   color: #432;
   border-radius: 5px;
-  padding: 18px 32px;
+  padding: 12px 36px;
 }
 /* ボタン　カーソルを当てたときの動き */
 .button:hover{
