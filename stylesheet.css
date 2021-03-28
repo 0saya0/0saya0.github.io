@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+html{
+  font-size: 100%;
+}
+
+body{
+  font-family: sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+.logo{
+  width: 210px;
+  margin-top: 0px;
+}
+
+.main-nav{
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.main-nav li{
+  margin-left: 36px;
+}
+
+.main-nav a{
+  color: #432;
+}
+
+/* navi カーソルを当てたときの動きの指定 */
+.main-nav a:hover{
+  color: pink;
+}
+
+.page-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding:0 4%;
+}
+
+/* メインブロック */
+.home-content{
+  text-align: center;
+  margin-top: 5%;
+}
+
+.home-content p{
+  font-size: 1.125rem;
+  margin: 5px 0 42px;
+}
+
+/* 見出し */
+.page-title{
+  font-size: 5rem;
+  font-family: 'Philosopher' serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+/* ボタン */
+.button{
+  font-size: 1.375rem;
+  background: lightpink;
+  color: #432;
+  border-radius: 5px;
+  padding: 12px 36px;
+}
+/* ボタン　カーソルを当てたときの動き */
+.button:hover{
+  background: #ff6c94;
+}
+
+/* 大きな背景画像 */
+.big-bg{
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#home{
+  background-image:   url(images/cat458.jpg),linear-gradient(white,pink,red);
+  background-blend-mode: luminosity;
+  min-height: 100vh;
+
+}
+
+/* BLOG */
+#blog {
+  background-image: url(images/nikukyu.jpg);
+  height: 270px;
+  margin-bottom: 40px;
+}
+
+#blog .page-title{
+  text-align: center;
+}
+
+/* フッター */
+footer{
+  background: #432;
+  text-align: center;
+  padding: 26px 0;
+  margin-top: 60px;
+}
+
+footer p {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+/* 記事部分 */
+article{
+  width: 74%;
+}
+
+.post-info{
+  position: relative;
+  padding-top: 4px;
+  margin-bottom: 40px;
+}
+
+.post-date{
+  background: lightpink;
+  border-radius: 50%;
+  color: #432;
+  width: 100px;
+  height: 100px;
+  font-size: 1.625rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+}
+
+.post-date span{
+  font-size: 1rem;
+  border-top: 1px rgba(255,255,255,5) solid;
+  padding-top: 6px;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.post-title{
+  font-family: "Yu Mincho" , "YuMincho" , serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.post-title,
+.post-cat{
+  margin-left: 120px;
+}
+
+article img{
+  margin-bottom: 20px;
+}
+
+article p{
+  margin-bottom: 1rem;
+}
+
+/* サイドバー */
+aside{
+  width: 22%;
+  
+}
+
+.blog-contents{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.sub-title{
+  font-size: 1.375rem;
+  padding: 0 8px 8px;
+  border-bottom: 2px pink solid;
+  font-weight: normal;
+}
+
+aside p{
+  padding: 12px 10px;
+}
+
+.sub-menu{
+  margin-bottom: 60px;
+  list-style: none;
+}
+
+.sub-menu li{
+  border-bottom: 1px #ddd solid;
+}
+
+.sub-menu a{
+  color: #432;
+  padding: 10px;
+  display: block;
+}
+
+.sub-menu a:hover{
+  color: #ff6c94;
+}
+
+/* モバイル版 */
+@media (max-width: 600px){
+  h1{
+    color: red;
+  }
+}
+
+/* header */
+.main-nav{
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.main-nav li{
+  margin: 0 20px;
+}
+
+/* home */
+.home-content{
+  margin-top: 20%;
+}
+
+/* ニュース */
+.news{
+  /* text-align: center; */
+  /* width:74%; */
+}
+
+.news-content{
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "sans-serif" !important;
+  display: inline-block;
+  width: 40%;
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+.news-content h3{
+  display: inline-block;
+  font-weight: lighter;
+}
+
+
+.date{
+  font-size: 14px;
+  padding: 0 6px;
+  border-radius: 5px;
+  display: inline-block;
+  line-height: 2px;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+/* ページナンバー */
+.page{
+  margin-left: 650px;
+  margin-top: 13px;
+  padding: 5px 10px;
+  font-size: 18px;
+  width: 20%;
+ }
+ 
+ .page-1{
+   background-color:  rgb(255, 198, 207);
+   color: white;
+   padding: 5px 12px;
+ }
+ 
+ .page-number{
+   font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "sans-serif" !important;
+   background-color: #efefefef;
+   text-decoration: none;
+   padding: 5px 12px;
+   margin-left: 3px;
+ }
+ 
+ .page-number:hover{
+   background-color: rgb(252, 212, 218);
