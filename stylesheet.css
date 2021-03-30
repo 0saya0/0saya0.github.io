@@ -130,6 +130,10 @@ article{
   width: 74%;
 }
 
+.post{
+  margin-bottom: 50px;
+}
+
 .post-info{
   position: relative;
   padding-top: 4px;
@@ -216,6 +220,26 @@ aside p{
 }
 
 .sub-menu a:hover{
+  color: #ff6c94;
+}
+
+.sns{
+  display: flex;
+  text-transform: uppercase;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.sns li{
+  margin-left: 30px;
+}
+
+.sns a{
+  color: #432;
+}
+
+.sns a:hover{
   color: #ff6c94;
 }
 
