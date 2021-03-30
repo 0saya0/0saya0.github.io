@@ -324,3 +324,9 @@ aside p{
  
  .page-number:hover{
    background-color: rgb(252, 212, 218);
+ }
+
+ .page-blog{
+  margin-left: 550px;
+  margin-top: 13px;
+ }
