@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>cat world.</title>
+    <meta name="description" content="猫の総合情報サイト">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <meta name="viewport" content="width=device-wdth,intial-scale=1">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div  id="blog" class="big-bg">
+      <header class="page-header wrapper">
+        <h1><a href="index.html"><img class="logo" src="images/タイトルなし.png" alt="ロゴ画像"></a></h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="index.html">Top</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="news.html">Topics</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="wrapper">
+        <h2 class="page-title">contact</h2>
+      </div><!--/.wrapper-->
+    </div> <!--blog-->
+
+    <div class="contact">
+      <h3>お問い合わせ</h3>
+      <p>お問い合わせ内容を入力のうえ、送信ボタンを押して下さい。</p>
+    </div>
+      
+      <form>
+        <div class="item">
+          <label for="name" class="label">お名前</label>
+          <input id="name" class="inputs" type="text" name="name">
+        </div>
+
+        <div class="item">
+          <label for="name2" class="label">フリガナ</label>
+          <input id="name2" class="inputs" type="text" name="name">
+        </div>
+        
+        <div class="item">
+          <label for="mail" class="label">メールアドレス</label>
+          <input id="mail" class="inputs" type="email" name="email">
+        </div>
+
+        <div class="item">
+          <label for="tell" class="label">電話番号</label>
+          <input id="tell" class="inputs" type="tell" name="tell">
+        </div>
+      
+        <div class="item">
+          <p class="label">お問い合わせ項目</p>
+          <div class="inputs">
+            <select>
+              <option value="work">お仕事依頼</option>
+              <option value="hope">今日のにゃんこ出演希望</option>
+              <option value="event">イベント問い合わせ</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="item">
+          <label class="label">お問い合わせ内容</label>
+          <textarea class="inputs"></textarea>
+        </div>
+      
+        <div class="btn-area">
+          <input type="submit" value="送信">
+        </div>
+      
+      </form>  
+
+    <footer>
+      <div class="wrapper">
+        <p><small>&copy;2019 cat comit</small></p>
+      </div>
+    </footer>
+  </body>
+</html>
+
